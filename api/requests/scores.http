@@ -1,0 +1,35 @@
+###get all test
+GET http://localhost:3001/scores
+
+###create one 
+POST http://localhost:3001/scores  
+Content-Type: application/json
+
+{
+    "username": "lauury",
+    "score": 9,
+    "date":"2021-01-02T10:17:35.457+00:00",
+    "joke": "6461f476d9a9da9dbeade34e"
+}
+
+###create one  with no existence joke
+POST http://localhost:3001/scores  
+Content-Type: application/json
+
+{
+    "username": "camille",
+    "score": 9,
+    "date":"2021-01-02T10:17:35.457+00:00",
+    "joke": "test"
+}
+
+###create one with already existing previe 
+POST http://localhost:3001/scores  
+Content-Type: application/json
+
+{
+    "username": "camille",
+    "score": 9,
+    "date":"2021-01-02T10:17:35.457+00:00",
+    "joke": "6461f476d9a9da9dbeade34e"
+}

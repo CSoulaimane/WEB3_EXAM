@@ -1,0 +1,28 @@
+###get all test
+GET http://localhost:3001/jokes
+
+###get one test
+GET http://localhost:3001/jokes/6461f476d9a9da9dbeade37e
+
+###delete test
+DELETE http://localhost:3001/jokes/6461f476d9a9da9dbeade37e
+
+###create one 
+POST http://localhost:3001/jokes    
+Content-Type: application/json
+
+{
+    "question": "this is a test",
+    "answer": "this is a test",
+    "category": "Programming"
+}
+
+###create bad request one 
+POST http://localhost:3001/jokes    
+Content-Type: application/json
+
+{
+    "question": "th",
+    "answer": "this is a test",
+    "category": "Programming"
+}
