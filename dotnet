@@ -1,0 +1,12 @@
+i.	Microsoft.EntityFrameworkCore
+ii.	Microsoft.EntityFrameworkCore.Design
+iii.	Microsoft.EntityFrameworkCore.Tools
+iv.	Microsoft.EntityFrameworkCore.SqlServer
+6.	Scaffold-DbContext -OutputDir Models 'Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind' Microsoft.EntityFrameworkCore.SqlServer
+
+  bonne  : Scaffold-DbContext -OutputDir Models 'Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind' Microsoft.EntityFrameworkCore.SqlServer
+
+
+i.	Outils –> SQL SERVER -> Nouvelle requête/query
+ii.	Copier-coller le code du fichier «Northwind4SQLServer.sql»
+iii.	Exécuter le code du query (bouton play vert en haut à gauche de la fenêtre query)
